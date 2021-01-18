@@ -37,4 +37,5 @@ function addScripts(){
   wp_register_script('my-script', get_stylesheet_directory_uri().$js, null, $version, true);
   wp_enqueue_script( 'my-script' );
 }
+add_action( 'wp_enqueue_scripts', 'addScripts' );
 ```
